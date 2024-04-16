@@ -14,7 +14,7 @@
   <meta name="author" content="Francisco Meza">
   <meta name="author" content="Nicolas Raab">
   <meta name="author" content="Iongel Duran-Llacer">
-  <title>quarto-inputec095456</title>
+  <title>quarto-inputa4b3cedb</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -394,7 +394,8 @@ Iongel Duran-Llacer <a href="https://orcid.org/0000-0003-3290-4947" class="quart
 <li><p><span class="citation" data-cites="IPCC2023">Calvin et al. (<a href="" role="doc-biblioref" onclick="return false;">2023</a>)</span> suggests that rising temperatures <code>will increase</code> the extent, frequency, and <code>severity</code> of <code>agricultural</code> and <code>ecological droughts</code>.</p></li>
 <li><p><code>North-central</code> Chile has faced a persistent precipitation deficit <code>since 2010</code>, defined as a <code>megadrought</code> <span class="citation" data-cites="Garreaud2017">(<a href="" role="doc-biblioref" onclick="return false;">Garreaud et al. 2017</a>)</span>.</p></li>
 </ul>
-<p><img data-src="img/global_gis_2022_chart.png" style="width:20.0%" data-fig-align="center" alt="Source: https://earthobservatory.nasa.gov/"> <img data-src="img/fig2_GCH2023_PR_ERA5_surface_temperature_anomaly_annual_2023.png" style="width:15.0%" data-fig-align="center" alt="fsfdsfsdfdsf"> <img data-src="img/era_temp_time_series.png" style="width:20.0%" data-fig-align="center"> <img data-src="img/chile-flag.png" style="width:10.0%"> <img data-src="img/megadrought_chile_guardian.png" style="width:30.0%"></p>
+<!-- ![Source: https://earthobservatory.nasa.gov/](img/global_gis_2022_chart.png){width="20%" fig-align="center"}-->
+<p><img data-src="img/fig2_GCH2023_PR_ERA5_surface_temperature_anomaly_annual_2023.png" style="width:15.0%" data-fig-align="center" alt="fsfdsfsdfdsf"> <img data-src="img/era_temp_time_series.png" style="width:20.0%" data-fig-align="center"> <img data-src="img/chile-flag.png" style="width:10.0%"> <img data-src="img/megadrought_chile_guardian.png" style="width:30.0%"></p>
 </section>
 <section id="section" class="slide level2" data-background-image="img/fig_spei24_macrozonas.png" data-background-size="contain">
 <h2></h2>
@@ -403,7 +404,7 @@ Iongel Duran-Llacer <a href="https://orcid.org/0000-0003-3290-4947" class="quart
 <h2>Objective</h2>
 <p>We aim to assess across continental Chile:</p>
 <ol type="i">
-<li>short- to long-term temporal <code>trends</code> in multi-scalar drought indices of <code>water demand</code>, <code>water supply</code>, and<code>soil moisture</code>; and <code>vegetation productivity</code>;</li>
+<li>short- to long-term temporal <code>trends</code> in multi-scalar drought indices of <code>water demand</code>, <code>water supply</code>, and <code>soil moisture</code>; and <code>vegetation productivity</code>;</li>
 <li>the relationship of vegetation productivity with drought indices.</li>
 </ol>
 </section>
@@ -415,7 +416,7 @@ Iongel Duran-Llacer <a href="https://orcid.org/0000-0003-3290-4947" class="quart
 <p><img data-src="img/map_study_con_landcover.png" style="width:85.0%"></p>
 </div><div class="column" style="width:50%;">
 <p><strong>Land cover persistent surface area (2001-2022)</strong></p>
-<p><img data-src="img/table_surface_landcover_macrozone.png" style="width:100.0%"></p>
+<p><img data-src="img/table_surface_landcover_macrozone.png" style="width:100.0%"> Note: Derived from MCD12Q1.061 (MODIS)</p>
 </div>
 </div>
 </section>
@@ -451,19 +452,32 @@ Iongel Duran-Llacer <a href="https://orcid.org/0000-0003-3290-4947" class="quart
 </section>
 <section id="drought-indices" class="slide level2 smaller" data-background-image="img/egu24_logo.svg" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
 <h2>Drought Indices</h2>
+<blockquote>
+<p>Non-parametric method for the calculation of the drought indices <span class="citation" data-cites="Farahmand2015">(<a href="" role="doc-biblioref" onclick="return false;">Farahmand and AghaKouchak 2015</a>)</span></p>
+</blockquote>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
-<li><p>Non-parametric method for the calculation of the drought indices <span class="citation" data-cites="Farahmand2015">(<a href="" role="doc-biblioref" onclick="return false;">Farahmand and AghaKouchak 2015</a>)</span></p></li>
-<li><p>Empirical Tukey plotting position <span class="citation" data-cites="Wilks2011">(<a href="" role="doc-biblioref" onclick="return false;">Wilks 2011</a>)</span></p></li>
+<li>Empirical Tukey plotting position <span class="citation" data-cites="Wilks2011">(<a href="" role="doc-biblioref" onclick="return false;">Wilks 2011</a>)</span></li>
 </ul>
 <p><span id="eq-probPai"><span class="math display">\[P(A^s_i) = \frac{i-0.33}{n+0.33'} \qquad(1)\]</span></span></p>
 <ul>
-<li>The drought indices <span class="math inline">\(SPI\)</span>, <span class="math inline">\(SPEI\)</span>, <span class="math inline">\(EDDI\)</span>, <span class="math inline">\(SSI\)</span>, and vegetation proxy <span class="math inline">\(zcNDVI\)</span> are obtained following the inverse normal approximation <span class="citation" data-cites="Abramowitz1968">(<a href="" role="doc-biblioref" onclick="return false;">Abramowitz and Stegun 1968</a>)</span>:</li>
+<li>The drought indices:</li>
+<li><code>SPI</code> <span class="citation" data-cites="McKee1993">(<a href="" role="doc-biblioref" onclick="return false;">Mckee, Doesken, and Kleist 1993</a>)</span>,</li>
+<li><code>SPEI</code> <span class="citation" data-cites="Vicente-Serrano2010">(<a href="" role="doc-biblioref" onclick="return false;">Vicente-Serrano, Beguería, and López-Moreno 2010</a>)</span>,</li>
+<li><code>EDDI</code> <span class="citation" data-cites="Hobbins2016 McEvoy2016">(<a href="" role="doc-biblioref" onclick="return false;">Hobbins et al. 2016</a>; <a href="" role="doc-biblioref" onclick="return false;">McEvoy et al. 2016</a>)</span>,</li>
+<li><code>SSI</code> <span class="citation" data-cites="Hao2013">(<a href="" role="doc-biblioref" onclick="return false;">Hao and AghaKouchak 2013</a>)</span>, and</li>
+<li><code>zcNDVI</code> <span class="citation" data-cites="Zambrano2018">(<a href="" role="doc-biblioref" onclick="return false;">Zambrano et al. 2018</a>)</span></li>
 </ul>
+</div><div class="column" style="width:50%;">
+<p>Inverse normal approximation <span class="citation" data-cites="Abramowitz1968">(<a href="" role="doc-biblioref" onclick="return false;">Abramowitz and Stegun 1968</a>)</span>:</p>
 <p><span id="eq-DI"><span class="math display">\[DI(A^s_i) = W - \frac{C_0+C_1\cdot W + c_2 \cdot W^2}{1+d_1\cdot W +d_2\cdot W^2 +d_3\cdot W^3} \qquad(2)\]</span></span></p>
 <ul>
 <li><p><code>SPI, SPEI, EDDI, SSI</code> -&gt; Short- (1 to 6 months) and long-term (12-36 months).</p></li>
 <li><p><code>zcNDVI</code> -&gt; anomaly of cumulative NDVI of 6 months</p></li>
 </ul>
+</div>
+</div>
 </section>
 <section id="analysis" class="slide level2 smaller" data-background-image="img/egu24_logo.svg" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
 <h2>Analysis</h2>
@@ -496,16 +510,16 @@ Iongel Duran-Llacer <a href="https://orcid.org/0000-0003-3290-4947" class="quart
 </div>
 </section>
 <section>
-<section id="results-trends-of-drought-indices" class="title-slide slide level1 center" data-background-color="lightgrey">
-<h1>Results: Trends of drought indices</h1>
+<section id="results-trends-in-drought-indices" class="title-slide slide level1 center" data-background-color="lightgrey">
+<h1>Results: Trends in drought indices</h1>
 
 </section>
 <section id="section-1" class="slide level2" data-background-image="img/trend_raster_SPEI_SPI_macro_1981-2023.png" data-background-size="contain">
 <h2></h2>
 </section></section>
 <section>
-<section id="results-trend-of-zcndvi" class="title-slide slide level1 center" data-background-color="lightgrey">
-<h1>Results: Trend of zcNDVI</h1>
+<section id="results-trend-in-zcndvi" class="title-slide slide level1 center" data-background-color="lightgrey">
+<h1>Results: Trend in zcNDVI</h1>
 
 </section>
 <section id="section-2" class="slide level2" data-background-image="img/temporal_variation_zcNDVI6_macrozonas_con_mapa.png" data-background-size="contain">
@@ -522,7 +536,7 @@ Iongel Duran-Llacer <a href="https://orcid.org/0000-0003-3290-4947" class="quart
 </div>
 </section>
 <section id="summary-and-outlook" class="slide level2 smaller" data-background-image="img/egu24_logo.svg" data-background-position="97.5% 2.5%" data-background-size="7.5%" data-layout="true">
-<h2>Summary and Outlook</h2>
+<h2>Summary and outlook</h2>
 <ul>
 <li><p>We found a <code>significant trend</code> toward <code>decreasing</code> water <code>supply</code> in most of the Chilean territory.</p></li>
 <li><p>The whole country showed an <code>increase</code> in water <code>demand</code> due to increasing temperatures.</p></li>
@@ -560,14 +574,32 @@ Farahmand, Alireza, and Amir AghaKouchak. 2015. <span>“A Generalized Framework
 <div id="ref-Garreaud2017" class="csl-entry" role="listitem">
 Garreaud, René, Camila Alvarez-Garreton, Jonathan Barichivich, Juan Pablo Boisier, Duncan Christie, Mauricio Galleguillos, Carlos LeQuesne, James McPhee, and Mauricio Zambrano-Bigiarini. 2017. <span>“The 2010-2015 Mega Drought in <span>Central</span> <span>Chile</span>: <span>Impacts</span> on Regional Hydroclimate and Vegetation.”</span> <em>Hydrology and Earth System Sciences Discussions</em> 2017: 1–37. <a href="https://doi.org/10.5194/hess-2017-191">https://doi.org/10.5194/hess-2017-191</a>.
 </div>
+<div id="ref-Hao2013" class="csl-entry" role="listitem">
+Hao, Zengchao, and Amir AghaKouchak. 2013. <span>“Multivariate <span>Standardized</span> <span>Drought</span> <span>Index</span>: <span>A</span> Parametric Multi-Index Model.”</span> <em>Advances in Water Resources</em> 57 (July): 12–18. <a href="https://doi.org/10.1016/j.advwatres.2013.03.009">https://doi.org/10.1016/j.advwatres.2013.03.009</a>.
+</div>
+<div id="ref-Hobbins2016" class="csl-entry" role="listitem">
+Hobbins, Michael T., Andrew Wood, Daniel J. McEvoy, Justin L. Huntington, Charles Morton, Martha Anderson, and Christopher Hain. 2016. <span>“The <span>Evaporative</span> <span>Demand</span> <span>Drought</span> <span>Index</span>. <span>Part</span> <span>I</span>: <span>Linking</span> <span>Drought</span> <span>Evolution</span> to <span>Variations</span> in <span>Evaporative</span> <span>Demand</span>.”</span> <em>Journal of Hydrometeorology</em> 17 (6): 1745–61. <a href="https://doi.org/10.1175/JHM-D-15-0121.1">https://doi.org/10.1175/JHM-D-15-0121.1</a>.
+</div>
 <div id="ref-Kendall1975" class="csl-entry" role="listitem">
 Kendall, Mann. 1975. <em>Rank Correlation Methods (4th Ed</em>. 2d impression). Griffin.
+</div>
+<div id="ref-McEvoy2016" class="csl-entry" role="listitem">
+McEvoy, Daniel J., Justin L. Huntington, Michael T. Hobbins, Andrew Wood, Charles Morton, Martha Anderson, and Christopher Hain. 2016. <span>“The <span>Evaporative</span> <span>Demand</span> <span>Drought</span> <span>Index</span>. <span>Part</span> <span>II</span>: <span>CONUS</span>-<span>Wide</span> <span>Assessment</span> Against <span>Common</span> <span>Drought</span> <span>Indicators</span>.”</span> <em>Journal of Hydrometeorology</em> 17 (6): 1763–79. <a href="https://doi.org/10.1175/JHM-D-15-0122.1">https://doi.org/10.1175/JHM-D-15-0122.1</a>.
+</div>
+<div id="ref-McKee1993" class="csl-entry" role="listitem">
+Mckee, Thomas B, Nolan J Doesken, and John Kleist. 1993. <span>“The Relationship of Drought Frequency and Duration to Time Scales. <span>In</span>: <span>Proceedings</span> of the <span>Ninth</span> <span>Conference</span> on <span>Applied</span> <span>Climatology</span>.”</span> <em>American Metereological Society</em>, no. Boston: 179–84.
 </div>
 <div id="ref-Sen1968" class="csl-entry" role="listitem">
 Sen, Pranab Kumar. 1968. <span>“Estimates of the <span>Regression</span> <span>Coefficient</span> <span>Based</span> on <span>Kendall</span>’s <span>Tau</span>.”</span> <em>Journal of the American Statistical Association</em> 63 (324): 1379–89. <a href="https://doi.org/10.1080/01621459.1968.10480934">https://doi.org/10.1080/01621459.1968.10480934</a>.
 </div>
+<div id="ref-Vicente-Serrano2010" class="csl-entry" role="listitem">
+Vicente-Serrano, Sergio M., Santiago Beguería, and Juan I. López-Moreno. 2010. <span>“A Multiscalar Drought Index Sensitive to Global Warming: <span>The</span> Standardized Precipitation Evapotranspiration Index.”</span> <em>Journal of Climate</em> 23 (7): 1696–1718. <a href="https://doi.org/10.1175/2009JCLI2909.1">https://doi.org/10.1175/2009JCLI2909.1</a>.
+</div>
 <div id="ref-Wilks2011" class="csl-entry" role="listitem">
 Wilks, D. S. 2011. <span>“Empirical Distributions and Exploratory Data Analysis.”</span> Edited by 3rd. <em>Statistical Methods in the Atmospheric Sciences</em> 100.
+</div>
+<div id="ref-Zambrano2018" class="csl-entry" role="listitem">
+Zambrano, Francisco, Anton Vrieling, Andy Nelson, Michele Meroni, and Tsegaye Tadesse. 2018. <span>“Prediction of Drought-Induced Reduction of Agricultural Productivity in <span>Chile</span> from <span>MODIS</span>, Rainfall Estimates, and Climate Oscillation Indices.”</span> <em>Remote Sensing of Environment</em> 219 (December): 15–30. <a href="https://doi.org/10.1016/j.rse.2018.10.006">https://doi.org/10.1016/j.rse.2018.10.006</a>.
 </div>
 </div>
 </section></section>

@@ -54,7 +54,7 @@ title-slide-attributes:
 
 -   `North-central` Chile has faced a persistent precipitation deficit `since 2010`, defined as a `megadrought` [@Garreaud2017].
 
-![Source: https://earthobservatory.nasa.gov/](img/global_gis_2022_chart.png){width="20%" fig-align="center"} ![fsfdsfsdfdsf](img/fig2_GCH2023_PR_ERA5_surface_temperature_anomaly_annual_2023.png){width="15%" fig-align="center"} ![](img/era_temp_time_series.png){width="20%" fig-align="center"} ![](img/chile-flag.png){width="10%"} ![](img/megadrought_chile_guardian.png){width="30%"}
+<!-- ![Source: https://earthobservatory.nasa.gov/](img/global_gis_2022_chart.png){width="20%" fig-align="center"}--> ![fsfdsfsdfdsf](img/fig2_GCH2023_PR_ERA5_surface_temperature_anomaly_annual_2023.png){width="15%" fig-align="center"} ![](img/era_temp_time_series.png){width="20%" fig-align="center"} ![](img/chile-flag.png){width="10%"} ![](img/megadrought_chile_guardian.png){width="30%"} 
 
 ##  {background-image="img/fig_spei24_macrozonas.png" background-size="contain"}
 
@@ -62,7 +62,7 @@ title-slide-attributes:
 
 We aim to assess across continental Chile:
 
-i)  short- to long-term temporal `trends` in multi-scalar drought indices of `water demand`, `water supply`, and`soil moisture`; and `vegetation productivity`;
+i)  short- to long-term temporal `trends` in multi-scalar drought indices of `water demand`, `water supply`, and `soil moisture`; and `vegetation productivity`;
 ii) the relationship of vegetation productivity with drought indices.
 
 ## Study Area {.smaller background-image="img/egu24_logo.svg" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
@@ -78,6 +78,7 @@ ii) the relationship of vegetation productivity with drought indices.
 **Land cover persistent surface area (2001-2022)**
 
 ![](img/table_surface_landcover_macrozone.png){width="100%"}
+Note: Derived from MCD12Q1.061 (MODIS)
 :::
 :::
 
@@ -125,19 +126,31 @@ ii) the relationship of vegetation productivity with drought indices.
 
 ## Drought Indices {.smaller background-image="img/egu24_logo.svg" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
 
--   Non-parametric method for the calculation of the drought indices [@Farahmand2015]
+>Non-parametric method for the calculation of the drought indices [@Farahmand2015]
 
+::: {.columns}
+::: {.column width=50%}
 -   Empirical Tukey plotting position [@Wilks2011]
 
 $$P(A^s_i) = \frac{i-0.33}{n+0.33'}$$ {#eq-probPai}
 
--   The drought indices $SPI$, $SPEI$, $EDDI$, $SSI$, and vegetation proxy $zcNDVI$ are obtained following the inverse normal approximation [@Abramowitz1968]:
+-   The drought indices:
+  - `SPI` [@McKee1993], 
+  - `SPEI` [@Vicente-Serrano2010], 
+  - `EDDI` [@Hobbins2016; @McEvoy2016], 
+  - `SSI` [@Hao2013], and 
+  - `zcNDVI` [@Zambrano2018] 
+:::
+::: {.column width=50%}
+Inverse normal approximation [@Abramowitz1968]:
 
 $$DI(A^s_i) = W - \frac{C_0+C_1\cdot W + c_2 \cdot W^2}{1+d_1\cdot W +d_2\cdot W^2 +d_3\cdot W^3}$$ {#eq-DI}
 
 -   `SPI, SPEI, EDDI, SSI` -\> Short- (1 to 6 months) and long-term (12-36 months).
 
 -   `zcNDVI` -\> anomaly of cumulative NDVI of 6 months
+:::
+:::
 
 ## Analysis {.smaller background-image="img/egu24_logo.svg" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
 
@@ -163,12 +176,12 @@ $$DI(A^s_i) = W - \frac{C_0+C_1\cdot W + c_2 \cdot W^2}{1+d_1\cdot W +d_2\cdot W
 :::
 :::
 
-# Results: Trends of drought indices {background-color="lightgrey"}
+# Results: Trends in drought indices {background-color="lightgrey"}
 
 ## {background-image='img/trend_raster_SPEI_SPI_macro_1981-2023.png' background-size='contain'}
 
 
-# Results: Trend of zcNDVI {background-color='lightgrey'}
+# Results: Trend in zcNDVI {background-color='lightgrey'}
 
 ## {background-image="img/temporal_variation_zcNDVI6_macrozonas_con_mapa.png" background-size="contain"}
 
@@ -184,7 +197,7 @@ Coefficient of correlation (r) ![](img/mapa_cor_r_indices_zcNDVI6.png){width="85
 :::
 :::
 
-## Summary and Outlook {.smaller background-image="img/egu24_logo.svg" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+## Summary and outlook {.smaller background-image="img/egu24_logo.svg" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
 
 -   We found a `significant trend` toward `decreasing` water `supply` in most of the Chilean territory.
 
