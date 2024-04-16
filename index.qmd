@@ -1,0 +1,191 @@
+---
+title: "![](img/egu24_logo.svg){width=300}"
+subtitle: "Drought's trends over continental Chile using climatic variables of water demand and supply, soil moisture, and vegetation productivity<br>  ![](img/logo_umayor.png){width=250} ![](img/logo_hemera.png){width=350} ![](img/UC_logo.svg){width=150}"
+author:
+  - name: Francisco Zambrano
+    id: hemera
+    orcid: 0000-0001-6896-8534
+    corresponding: true
+    email: francisco.zambrano@umayor.cl
+    # affiliations:
+    #   - name: Hemera, UMayor
+  - name: Francisco Meza
+    id: uc
+    orcid: 0000-0002-9853-227X
+    email: fmeza@uc.cl
+    # affiliations:
+    #   - name: Agronomía UC. 
+  - name: Nicolas Raab
+    id: uc
+    orcid: 0000-0003-0356-4242
+    email: nraab@uc.cl
+  - name: Iongel Duran-Llacer
+    id: hemera
+    orcid: 0000-0003-3290-4947
+    email: iongel.duran@umayor.cl
+#"Francisco Zambrano, Francisco Meza, Nicolas Raab, and Iongel Duran-Llacer"
+#date: "April 18, 2024"
+width: 1280
+height: 720
+format: 
+    revealjs:
+      slide-number: true
+      transition: fade
+      background-transition: fade
+      theme: [default, custom.scss]
+      logo: img/horizontal_SB_color.png
+      footer: "slides: [https://fseq210022.github.io/EGU2024](https://fseq210022.github.io/EGU2024)"
+editor: visual
+css: style.css
+engine: knitr
+bibliography: references.bib
+title-slide-attributes:
+    data-background-image: "img/bg.jpg"
+    data-background-size: cover
+    data-background-opacity: ".4"
+---
+
+## Context
+
+-   `Global warming` has `increased` the `frequency` and `intensity` of `drought`, according to the AR6 of the IPCC [@IPCC2023].
+
+-   @IPCC2023 suggests that rising temperatures `will increase` the extent, frequency, and `severity` of `agricultural` and `ecological droughts`.
+
+-   `North-central` Chile has faced a persistent precipitation deficit `since 2010`, defined as a `megadrought` [@Garreaud2017].
+
+![Source: https://earthobservatory.nasa.gov/](img/global_gis_2022_chart.png){width="20%" fig-align="center"} ![fsfdsfsdfdsf](img/fig2_GCH2023_PR_ERA5_surface_temperature_anomaly_annual_2023.png){width="15%" fig-align="center"} ![](img/era_temp_time_series.png){width="20%" fig-align="center"} ![](img/chile-flag.png){width="10%"} ![](img/megadrought_chile_guardian.png){width="30%"}
+
+##  {background-image="img/fig_spei24_macrozonas.png" background-size="contain"}
+
+## Objective
+
+We aim to assess across continental Chile:
+
+i)  short- to long-term temporal `trends` in multi-scalar drought indices of `water demand`, `water supply`, and`soil moisture`; and `vegetation productivity`;
+ii) the relationship of vegetation productivity with drought indices.
+
+## Study Area {.smaller}
+
+**Continental Chile**
+
+::: columns
+::: {.column width="50%"}
+![](img/map_study_con_landcover.png){width="85%"}
+:::
+
+::: {.column width="50%"}
+**Land cover surface area**
+
+![](img/table_surface_landcover_macrozone.png){width="100%"}
+:::
+:::
+
+## Methods
+
+### Data
+
+![](img/table_data_used.png)
+
+**Atmospheric Evaporative Demand (AED) [@Hargreaves1985]**
+
+$$AED = 0.0023\cdot Ra\cdot (T+17.8)\cdot (T_{max}-T_{min})^{0.5}$$ {#eq-AED}
+
+## Methods {.smaller}
+
+**Drought Indices and vegetation productivity**
+
+::: columns
+::: {.column width="70%"}
+-   `Water Demand:` Evaporative Demand Drought Index (EDDI) [@Hobbins2016; @McEvoy2016]
+-   `Water Supply:` Standardized Precipitation Index (SPI) [@McKee1993]
+-   `Water Supply - Water Demand:` Standardized Precipitation Evapotranspiration Index [@Vicente-Serrano2010]
+-   `Soil Moisture:` Standardized Soil Moisture Index (SSI) [@Hao2013]
+-   `Vegetation Productivity:` Standardized Anomaly of cumulative NDVI (zcNDVI) [@Zambrano2018]
+:::
+
+::: {.column width="30%"}
+![Water Cycle/Balance Schematic. Source: FISRWG 1998](img/water_balance2.jpeg){width="80%"}
+:::
+:::
+
+## Methods {.smaller}
+
+**Drought Indices**
+
+-   Non-parametric method for the calculation of the drought indices [@Farahmand2015]
+
+-   Empirical Tukey plotting position [@Wilks2011]
+
+$$P(A^s_i) = \frac{i-0.33}{n+0.33'}$$ {#eq-probPai}
+
+-   The drought indices $SPI$, $SPEI$, $EDDI$, $SSI$, and vegetation proxy $zcNDVI$ are obtained following the inverse normal approximation [@Abramowitz1968]:
+
+$$DI(A^s_i) = W - \frac{C_0+C_1\cdot W + c_2 \cdot W^2}{1+d_1\cdot W +d_2\cdot W^2 +d_3\cdot W^3}$$ {#eq-DI}
+
+-   `SPI, SPEI, EDDI, SSI` -\> Short- (1 to 6 months) and long-term (12-36 months).
+
+-   `zcNDVI` -\> anomaly of cumulative NDVI of 6 months
+
+## Methods {.smaller}
+
+::: columns
+::: {.column width="85%"}
+**1) Trends analysis**
+
+-   `Significance of the trend:` Non-parametric test of Mann-Kendall [@Kendall1975].
+-   `Magnitude of the trend:` Sen’s slope [@Sen1968].
+    -   Water demand and supply drought indices (SPI, SPEI, EDDI, and SSI) for 1981-2023\
+    -   Vegetation productivity (zcNDVI) for 2000-2023 over the unchanged land cover 2001-2022.
+
+**2) Relationship of zcNDVI with drought indices**
+
+-   Pixel-to-pixel correlation between the `drought` indices over time periods of `short-` (1, 3, 6 mnths) to `long-term` (12, 24, and 36 mnths) with `zcNDVI`.
+-   Resulting in two raster maps:\
+    1) values of the `time scales` and drought index that `reached` the `maximum correlation`, and\
+    2) magnitude of the correlation (r) obtained by the drought index at the time scales.
+:::
+
+::: {.column width="15%"}
+![](img/Rlogo.png){width="50%"} ![](img/sf-logo.gif){width="50%"} ![](img/logo-terra.png){width="50%"} ![](img/hex-tidyverse.png){width="50%"}
+:::
+:::
+
+# Results {background-color="orange"}
+
+##  {background-image="img/trend_raster_SPEI_1981-2023.png" background-size="contain"}
+
+##  {background-image="img/trend_raster_EDDI_1981-2023.png" background-size="contain"}
+
+## Trends of drought indices
+
+![](img/trend_macrozone_drought_indices.png)
+
+## Vegetation Productivity {background-image="img/temporal_variation_zcNDVI6_macrozonas_con_mapa.png" background-size="contain"}
+
+## zcNDVI vs drought indices {.smaller}
+
+::: columns
+::: {.column width="50%"}
+Time-scale that reached the maximum r-squared ![](img/mapa_cor_selec_indices_zcNDVI6.png){width="85%"}
+:::
+
+::: {.column width="50%"}
+Coefficient of correlation (r) ![](img/mapa_cor_r_indices_zcNDVI6.png){width="85%"}
+:::
+:::
+
+## Conclusion {.smaller}
+
+-   We found a `significant trend` toward `decreasing` water `supply` in most of the Chilean territory.
+
+-   The whole country showed an `increase` in water `demand` due to increasing temperatures.
+
+-   The magnitude of the `trends` are `stronger` for `longer time scales`.
+
+-   The change in `vegetation productivity` has been `severe` in the `north-central` part of the country.
+
+-   The anomaly in `soil moisture` over `12 months` is the main variable explaining the change in vegetation productivity.
+
+-   The variation in AED seems to intensify the drought impact on vegetation productivity.
+
+## References {#refs .scrollable}
