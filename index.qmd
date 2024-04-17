@@ -161,7 +161,7 @@ Note: Derived from MCD12Q1.061 (MODIS)
 -   `Significance of the trend:` Non-parametric test of Mann-Kendall [@Kendall1975].
 -   `Magnitude of the trend:` Sen’s slope [@Sen1968].
     -   Water demand and supply drought indices (SPI, SPEI, EDDI, and SSI) for 1981-2023\
-    -   Vegetation productivity (zcNDVI) for 2000-2023 over the unchanged land cover 2001-2022.
+    -   Vegetation productivity (zcNDVI) for 2000-2023 over the unchanged land cover.
 
 **2) Relationship of zcNDVI with drought indices**
 
@@ -205,17 +205,19 @@ Coefficient of correlation (r) ![](img/mapa_cor_r_indices_zcNDVI6.png){width="85
 
   -   The whole country showed an `increase` in water `demand` due to increasing temperatures.
 
-  -   The magnitude of the `trends` are `stronger` for `longer time scales`.
+  -   The magnitude of the `trends` `increase/decrease` for `longer time scales`.
 
   -   The change in `vegetation productivity` has been `severe` in the `north-central` part of the country.
 
 **Correlation of drought indices and zcNDVI**
 
--   The anomaly in `soil moisture` over `12 months` is the main variable explaining the change in vegetation productivity (r-square = ~0.5 in north-central Chile).
+- The anomaly in `soil moisture` over `12 months` is the main variable explaining the change in vegetation productivity (r-squared = ~0.5 in north-central Chile).
 
--   The variation in AED seems to intensify the drought impact on vegetation productivity.
+- The variation in `AED` appears to `intensify` the drought impact on `vegetation productivity`.
 
 **Outlook**
+
+- We want to address the `relationship` between the drought trend (demand, supply, and soil moisture) and `land cover changes`.
 
 # Thank you! {.center}
 
