@@ -181,7 +181,7 @@ Note: Derived from MCD12Q1.061 (MODIS)
 ## {background-image='img/trend_raster_SPEI_SPI_macro_1981-2023.png' background-size='contain'}
 
 
-# Results: Trend in zcNDVI {background-color='lightgrey'}
+# Results: Trends in zcNDVI {background-color='lightgrey'}
 
 ## {background-image="img/temporal_variation_zcNDVI6_macrozonas_con_mapa.png" background-size="contain"}
 
