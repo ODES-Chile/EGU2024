@@ -75,7 +75,7 @@ ii) the relationship of vegetation productivity with drought indices.
 :::
 
 ::: {.column width="50%"}
-**Land cover persistent surface area (2001-2022)**
+**Land cover persistent surface area (>80%) <br> (2001-2022)**
 
 ![](img/table_surface_landcover_macrozone.png){width="100%"}
 Note: Derived from MCD12Q1.061 (MODIS)
@@ -124,33 +124,33 @@ Note: Derived from MCD12Q1.061 (MODIS)
 <!-- ::: -->
 <!-- ::: -->
 
-## Drought Indices {.smaller background-image="img/egu24_logo.svg" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
+<!-- ## Drought Indices {.smaller background-image="img/egu24_logo.svg" background-position="97.5% 2.5%" background-size="7.5%" layout="true"} -->
 
->Non-parametric method for the calculation of the drought indices [@Farahmand2015]
+<!-- >Non-parametric method for the calculation of the drought indices [@Farahmand2015] -->
 
-::: {.columns}
-::: {.column width=50%}
--   Empirical Tukey plotting position [@Wilks2011]
+<!-- ::: {.columns} -->
+<!-- ::: {.column width=50%} -->
+<!-- -   Empirical Tukey plotting position [@Wilks2011] -->
 
-$$P(A^s_i) = \frac{i-0.33}{n+0.33'}$$ {#eq-probPai}
+<!-- $$P(A^s_i) = \frac{i-0.33}{n+0.33'}$$ {#eq-probPai} -->
 
--   The drought indices:
-  - `SPI` [@McKee1993], 
-  - `SPEI` [@Vicente-Serrano2010], 
-  - `EDDI` [@Hobbins2016; @McEvoy2016], 
-  - `SSI` [@Hao2013], and 
-  - `zcNDVI` [@Zambrano2018] 
-:::
-::: {.column width=50%}
-Inverse normal approximation [@Abramowitz1968]:
+<!-- -   The drought indices: -->
+<!--   - `SPI` [@McKee1993],  -->
+<!--   - `SPEI` [@Vicente-Serrano2010],  -->
+<!--   - `EDDI` [@Hobbins2016; @McEvoy2016],  -->
+<!--   - `SSI` [@Hao2013], and  -->
+<!--   - `zcNDVI` [@Zambrano2018]  -->
+<!-- ::: -->
+<!-- ::: {.column width=50%} -->
+<!-- Inverse normal approximation [@Abramowitz1968]: -->
 
-$$DI(A^s_i) = W - \frac{C_0+C_1\cdot W + c_2 \cdot W^2}{1+d_1\cdot W +d_2\cdot W^2 +d_3\cdot W^3}$$ {#eq-DI}
+<!-- $$DI(A^s_i) = W - \frac{C_0+C_1\cdot W + c_2 \cdot W^2}{1+d_1\cdot W +d_2\cdot W^2 +d_3\cdot W^3}$$ {#eq-DI} -->
 
--   `SPI, SPEI, EDDI, SSI` -\> Short- (1 to 6 months) and long-term (12-36 months).
+<!-- -   `SPI, SPEI, EDDI, SSI` -\> Short- (1 to 6 months) and long-term (12-36 months). -->
 
--   `zcNDVI` -\> anomaly of cumulative NDVI of 6 months
-:::
-:::
+<!-- -   `zcNDVI` -\> anomaly of cumulative NDVI of 6 months -->
+<!-- ::: -->
+<!-- ::: -->
 
 ## Analysis {.smaller background-image="img/egu24_logo.svg" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
 
@@ -167,7 +167,7 @@ $$DI(A^s_i) = W - \frac{C_0+C_1\cdot W + c_2 \cdot W^2}{1+d_1\cdot W +d_2\cdot W
 
 -   Pixel-to-pixel correlation between the `drought` indices over time periods of `short-` (1, 3, 6 mnths) to `long-term` (12, 24, and 36 mnths) with `zcNDVI`.
 -   Resulting in two raster maps:\
-    1) values of the `time scales` and drought index that `reached` the `maximum correlation`, and\
+    1) values of the `time scales` that `reached` the `maximum correlation` per drought index and\
     2) magnitude of the correlation (r) obtained by the drought index at the time scales.
 :::
 
@@ -199,19 +199,25 @@ Coefficient of correlation (r) ![](img/mapa_cor_r_indices_zcNDVI6.png){width="85
 
 ## Summary and outlook {.smaller background-image="img/egu24_logo.svg" background-position="97.5% 2.5%" background-size="7.5%" layout="true"}
 
--   We found a `significant trend` toward `decreasing` water `supply` in most of the Chilean territory.
+**Trends**
 
--   The whole country showed an `increase` in water `demand` due to increasing temperatures.
+  -   We found a `significant trend` toward `decreasing` water `supply` in most of the Chilean territory.
 
--   The magnitude of the `trends` are `stronger` for `longer time scales`.
+  -   The whole country showed an `increase` in water `demand` due to increasing temperatures.
 
--   The change in `vegetation productivity` has been `severe` in the `north-central` part of the country.
+  -   The magnitude of the `trends` are `stronger` for `longer time scales`.
+
+  -   The change in `vegetation productivity` has been `severe` in the `north-central` part of the country.
+
+**Correlation of drought indices and zcNDVI**
 
 -   The anomaly in `soil moisture` over `12 months` is the main variable explaining the change in vegetation productivity (r-square = ~0.5 in north-central Chile).
 
 -   The variation in AED seems to intensify the drought impact on vegetation productivity.
 
-# Thanks! {.center}
+**Outlook**
+
+# Thank you! {.center}
 
 ![](https://cdn1.iconfinder.com/data/icons/shopping-346/24/browser-internet-website-click-page-512.png){width=50}[https://odes-chile.org/app/unidades](https://odes-chile.org/app/unidades)  
 ![](https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-512.png){width="50"} <https://www.linkedin.com/company/odes-chile/>\
