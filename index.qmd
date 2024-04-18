@@ -189,7 +189,7 @@ Note: Derived from MCD12Q1.061 (MODIS)
 
 ::: columns
 ::: {.column width="50%"}
-Time-scale that reached the maximum r-squared ![](img/mapa_cor_selec_indices_zcNDVI6.png){width="85%"}
+Time-scales that reached the maximum r-squared ![](img/mapa_cor_selec_indices_zcNDVI6.png){width="85%"}
 :::
 
 ::: {.column width="50%"}
