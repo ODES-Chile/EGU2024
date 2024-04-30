@@ -31,10 +31,13 @@ format:
     revealjs:
       slide-number: false
       transition: fade
+      title: "![EGU2024](img/egu24_logo.svg){width=300}"
       background-transition: fade
       theme: [default, custom.scss]
       logo: img/horizontal_SB_color.png
       footer: "slides: [https://ODES-Chile.github.io/EGU2024](https://ODES-Chile.github.io/EGU2024)"
+# website:
+#   favicon: img/horizontal_SB_color.png
 editor: visual
 css: style.css
 engine: knitr
