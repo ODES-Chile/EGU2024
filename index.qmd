@@ -36,8 +36,8 @@ format:
       theme: [default, custom.scss]
       logo: img/horizontal_SB_color.png
       footer: "slides: [https://ODES-Chile.github.io/EGU2024](https://ODES-Chile.github.io/EGU2024)"
-# website:
-#   favicon: img/horizontal_SB_color.png
+website:
+  favicon: https://raw.githubusercontent.com/ODES-Chile/ODES-Chile.github.io/main/assets/img/Isotip_gradiente_azul.png
 editor: visual
 css: style.css
 engine: knitr
